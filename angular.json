@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/guess-the-drawing",
             "index": "src/index.html",
+            "baseHref" : "/gemini-angular-drawing-demo/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
