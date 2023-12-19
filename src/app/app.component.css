@@ -4,26 +4,38 @@
   margin-top: 150px;
 }
 
-.prompt {
+.prompt-controls {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
-.prompt input {
-  width: calc(100% - 100px);
+.prompt-controls input {
   font-size: 1em;
+  padding: 8px;
 }
 
-.prompt mat-icon {
+.prompt-controls mat-icon {
   margin-top: 5px;
   cursor: pointer;
 }
 
-.prompt mat-icon.disabled {
+.prompt-controls mat-icon.disabled {
   color: #ccc;
   cursor: default;
+}
+
+.prompt-config {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prompt-config select {
+  width: calc(100% - 60px);
+  margin-right: 20px;
 }
 
 .answer {
