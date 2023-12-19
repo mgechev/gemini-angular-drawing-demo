@@ -1,27 +1,24 @@
-# GuessTheDrawing
+# Angular Web Audio melodies sample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+Developer sample written in Angular demonstrating Gemini multimodal (image and audio) input and understanding. The user enters a prompt and the app generates images via VertexAI’s image generation which the user can after that preview in a three-dimensional gallery. The user has an input where they can ask a question about the images. Using Web Audio’s Speech Synthesis API we read Gemini’s answer for the images.
 
-## Development server
+## Pre-requisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+0. Node.js and npm
+  * Download and install Go: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+0. Gemini API key
+  * Launch Google AI Studio: https://aistudio.google.com/
+  * Click “Get API Key”
 
-## Build
+## Getting started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Compile and run the app:
 
-## Running unit tests
+```shell
+npm i
+npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+In the text box with placeholder "API key" enter your Gemini API key. You can find instructions how to use the app under "Instructions" when you open the user interface.

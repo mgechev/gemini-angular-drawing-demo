@@ -1,0 +1,86 @@
+:host {
+  display: table;
+  margin: auto;
+}
+
+.prompt-controls {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.prompt-controls input {
+  font-size: 1em;
+  padding: 8px;
+}
+
+.prompt-controls mat-icon {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.prompt-controls mat-icon.disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.prompt-config {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prompt-config select {
+  width: calc(100% - 60px);
+  margin-right: 20px;
+}
+
+.answer {
+  font-size: 1em;
+  padding-top: 10px;
+  max-width: 400px;
+}
+
+.gemini-name {
+  color: #999;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spinner .8s linear infinite;
+}
+
+app-canvas {
+  margin-top: 15px;
+}
+
+.instructions {
+  max-width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.instructions summary {
+  cursor: pointer;
+}
+
+.api-key-input {
+  margin-bottom: 10px;
+}

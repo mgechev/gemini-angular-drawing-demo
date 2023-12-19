@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/guess-the-drawing",
             "index": "src/index.html",
+            "baseHref" : "/gemini-angular-drawing-demo/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -25,6 +26,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -89,6 +91,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -96,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "04fbee5e-ef1b-4afb-9264-0cdf022a867f"
   }
 }
