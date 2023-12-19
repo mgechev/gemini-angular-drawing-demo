@@ -1,27 +1,32 @@
-# GuessTheDrawing
+# Gemini Angular Drawing Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+This repository contains a demo similar to the [drawing video](https://youtube.com/clip/UgkxANEdAgfAiAz9TSgwY_2MSdmHg-MQkXL6?si=tqNbYfFmLwccRv5x) Google showed during the release of Gemini, using Web APIs.
 
-## Development server
+## How to use?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+First, make sure you [generate an API key](https://makersuite.google.com/app/apikey) and use it in `generative.service.ts`.
 
-## Code scaffolding
+After that:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+$ git clone git@github.com:mgechev/angular-gemini-drawing-demo
+$ cd angular-gemini-drawing-demo
+$ npm i
+$ ng serve
+```
 
-## Build
+Open Chrome and navigate to http://localhost:4200.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The demo uses the `webkitSpeechRecognition` API, which currently has limited [browser support](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API).
 
-## Running unit tests
+## Technical details
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This demo uses:
 
-## Running end-to-end tests
+- Angular and the Gemini JavaScript API
+- Web Speech API (`SpeechRecognition` and `SpeechSynthesis`)
+- HTML5 canvas API
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+MIT

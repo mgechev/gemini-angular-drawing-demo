@@ -1,0 +1,57 @@
+:host {
+  display: table;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.prompt {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.prompt input {
+  width: calc(100% - 100px);
+  font-size: 1em;
+}
+
+.prompt mat-icon {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.prompt mat-icon.disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.answer {
+  font-size: 1em;
+  padding-top: 10px;
+  max-width: 400px;
+}
+
+.gemini-name {
+  color: #999;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spinner .8s linear infinite;
+}
