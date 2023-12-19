@@ -11,7 +11,7 @@ export class GenerativeService {
 
       /* Put your API key here  */
       /* Generate an API key at https://makersuite.google.com/app/apikey */
-      'REPLACE_WITH_YOUR_API_KEY'
+      'AIzaSyDl7pUUy06HNP5NBzVAYgkx_kYvA0yZn0c'
 
     );
     return api.getGenerativeModel({ model: 'gemini-pro-vision' });
