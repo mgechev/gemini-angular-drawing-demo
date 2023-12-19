@@ -1,7 +1,6 @@
 :host {
   display: table;
   margin: auto;
-  margin-top: 150px;
 }
 
 .prompt-controls {
@@ -66,4 +65,10 @@
   border: 2px solid #ffffff;
   border-top-color: #000000;
   animation: spinner .8s linear infinite;
+}
+
+.disclaimer {
+  max-width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

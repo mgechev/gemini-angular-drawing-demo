@@ -19,9 +19,15 @@ import { GenerativeModel } from '@google/generative-ai';
     CanvasComponent,
     MatButtonModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
   ],
   template: `
+    <div class="disclaimer">
+      If you're using my API key or trying the online demo you may experience
+      delays since there's a limit for requests per minute. Find how to generate
+      your own API key
+      <a href="https://makersuite.google.com/app/apikey">here</a>.
+    </div>
     <app-canvas [width]="400" [height]="400" />
     <section class="prompt-controls">
       <input
@@ -33,10 +39,16 @@ import { GenerativeModel } from '@google/generative-ai';
       <div class="prompt-config">
         <select [disabled]="speechActive" [(ngModel)]="currentLanguage">
           @for (lang of languages; track lang.lang) {
-            <option [value]="lang.lang">{{ lang.label }}</option>
+          <option [value]="lang.lang">{{ lang.label }}</option>
           }
         </select>
-        <mat-icon [hidden]="true" (click)="speechInput()" aria-hidden="false" aria-label="Microphone" fontIcon="microphone"/>
+        <mat-icon
+          [hidden]="true"
+          (click)="speechInput()"
+          aria-hidden="false"
+          aria-label="Microphone"
+          fontIcon="microphone"
+        />
         <button
           mat-button
           color="primary"
@@ -50,7 +62,7 @@ import { GenerativeModel } from '@google/generative-ai';
     </section>
     <div class="answer">
       @if (output !== '') {
-        <span><span class="gemini-name">🤖 says:</span> {{ output }}</span>
+      <span><span class="gemini-name">🤖 says:</span> {{ output }}</span>
       }
     </div>
   `,
