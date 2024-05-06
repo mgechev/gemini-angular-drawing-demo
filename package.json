@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:guess-the-drawing": "node dist/guess-the-drawing/server/server.mjs",
-    "deploy": "ng build && mv dist/guess-the-drawing/browser/* docs/"
+    "serve:ssr:guess-the-drawing": "node dist/guess-the-drawing/server/server.mjs"
   },
   "private": true,
   "dependencies": {
